@@ -1,0 +1,134 @@
+/* Style général */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Menu */
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(90deg, #4CAF50, #2E8B57);
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  display: block;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.menu a.active,
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  transform: scale(1.05);
+}
+
+/* Sections */
+main {
+  padding: 40px 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+
+/* À propos */
+.apropos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.image-gauche {
+  flex: 1;
+  min-width: 250px;
+}
+
+.illustration {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.texte-droite {
+  flex: 2;
+  min-width: 300px;
+  text-align: justify;
+}
+
+/* Encadrés infos perso */
+.texte-droite p strong {
+  color: #4CAF50;
+}
+
+/* Compétences */
+.liste-competences li {
+  background-color: #ffffff;
+  border: 4px solid hsl(226, 74%, 71%);
+  margin-bottom: 10px;
+  padding: 12px;
+  border-left: #4CAF50;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.liste-competences li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  background-color: #f0fff0;
+}
+
+/* Projets */
+.liste-projets li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-left: 4px solid #4CAF50;
+  background-color: #fdfdfd;
+}
+
+/* Contact */
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li {
+  margin-bottom: 8px;
+  padding: 8px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: linear-gradient(90deg, #2E8B57, #4CAF50);
+  color: white;
+  font-size: 0.9em;
+}
